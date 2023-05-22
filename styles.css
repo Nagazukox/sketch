@@ -1,0 +1,29 @@
+:root {
+    --grid-size: 960px;
+    --cuadrados-por-lado: 16;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    border: 3px solid black;
+    max-width: var(--grid-size);
+    max-height: var(--grid-size);
+    width: var(--grid-size);
+    height: var(--grid-size);
+}
+
+.cuadrado {
+    flex: 1 0 calc(var(--grid-size) / var(--cuadrados-por-lado));
+    border: none;
+    background-color: white;
+}
+
+.boton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+}
